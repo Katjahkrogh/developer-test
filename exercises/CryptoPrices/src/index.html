@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Developer Assessment</title>
-    <!-- Link to the CSS file -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Developer Assessment</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Developer Assessment</h1>
-    </header>
+  <header>
+    <h1>Developer Assessment</h1>
+  </header>
 
-    <main>
-        <!-- Add your HTML content here -->
-    </main>
+  <main>
+    <div class="container">
+      <h2>Crypto Prices</h2>
+      <div class="table-container">
+        <table id="crypto-table">
+          <thead>
+            <tr>
+              <th>Coin</th>
+              <th>Price (USD)</th>
+              <th>Market Cap (USD)</th>
+            </tr>
+          </thead>
+          <tbody id="table-body">
 
-    <footer>
-        <p>&copy; 2024 Mercive</p>
-    </footer>
+          </tbody>
+        </table>
+      </div>
+      <div class="pagination">
+        <button id="back-btn" disabled>Back</button>
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+  </main>
 
-    <!-- Link to the JavaScript file -->
-    <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2024 Mercive</p>
+  </footer>
+
+  <!-- Link to the JavaScript file -->
+  <script src="script.js"></script>
 </body>
+
 </html>

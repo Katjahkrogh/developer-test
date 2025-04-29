@@ -1,43 +1,83 @@
+:root {
+  --color-text: #ffffff;
+  --color-bg: #181718;
+  --color-bg-secondary: #333;
+  --color-bg-testimonial: #222222;
+  --color-bg-testimonial-secondary: #363536;
+  --color-border: #7cb8e8;
+}
+
 /* Reset some default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 /* Basic layout styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text);
+  padding: 10px;
+  text-align: center;
 }
 
 header h1 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  margin: 40px 10px;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text);
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Add your CSS below here */
+
+#layout {
+  display: flex;
+  flex-direction: column;
+  max-width: 37rem;
+  padding: 1rem;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #testimonial-container {
+    height: 35rem;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--color-bg-testimonial);
+    position: relative;
+
+    .testimonial {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.8rem;
+      border-radius: 5px;
+      border-radius: 10px;
+      background-color: var(--color-bg-testimonial-secondary);
+      border-left: 4px solid var(--color-border);
+    }
+  }
+}
